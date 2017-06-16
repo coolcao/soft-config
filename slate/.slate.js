@@ -71,6 +71,24 @@ var right_bottom = slate.operation('move', {
     height: 'screenSizeY/2'
 });
 
+// resize
+var rigthToRight = slate.operation('resize', {
+    width : '+90%*screenSizeX',
+    anchor: 'top-left'
+});
+var rightToLeft = slate.operation('resize', {
+    width: '-90%*screenSizeX',
+    anchor: 'top-left'
+});
+var leftToRight = slate.operation('resize', {
+    width: '-90%*screenSizeX',
+    anchor: 'top-right'
+});
+var leftToLeft = slate.operation('resize', {
+    width: '+90%*screenSizeX',
+    anchor: 'bottom-right'
+});
+
 // 切换显示器
 var nextScreen = slate.operation('move', {
     x: "screenOriginX",
@@ -156,6 +174,22 @@ slate.bind('up:ctrl,alt,cmd', function(win) {
 slate.bind('down:ctrl,alt,cmd', function(win) {
     win.doOperation(bottomScreen);
 });
+
+// resize
+slate.bind('right:ctrl,alt', function (win) {
+    win.doOperation(leftToRight);
+});
+slate.bind('left:ctrl,alt', function (win) {
+    win.doOperation(leftToLeft);
+});
+slate.bind('right:alt,cmd', function (win) {
+    win.doOperation(rigthToRight);
+});
+slate.bind('left:alt,cmd', function (win) {
+    win.doOperation(rightToLeft);
+});
+
+// throw 1/4 屏
 slate.bind('1:ctrl,alt,cmd', function(win) {
     win.doOperation(left_top);
 });
