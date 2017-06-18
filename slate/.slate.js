@@ -98,6 +98,7 @@ var nextScreen = slate.operation('move', {
     screen: 'next'
 });
 
+
 // 创建布局
 var codeLayout = slate.layout('codeLayout', {
     "iTerm2": {
@@ -129,6 +130,28 @@ var codeLayout = slate.layout('codeLayout', {
     }
 
 });
+
+// 网格
+var grid = slate.operation("grid", {
+  "grids" : {
+    "0" : {
+      "width" : 8,
+      "height" : 4
+    },
+    "1" : {
+      "width" : 6,
+      "height" : 4
+    }
+  },
+  "padding" : 5
+});
+slate.bind("g:ctrl,alt,cmd", grid);
+
+// hint
+var hint = slate.operation("hint", {
+  "characters" : "QWERTYUIOP"
+});
+slate.bind("h:ctrl,alt,cmd", hint);
 
 var pushRight = slate.operation("push", {
     "direction": "right",
@@ -211,4 +234,7 @@ slate.bind('c:ctrl,alt,shift', function(win) {
     });
 });
 
-slate.default(["1920x1080", "1280x800"], codeLayout);
+
+slate.default(["1920x1080", "1280x800", "2560x1080"], codeLayout);
+
+slate.log('配置加载完成');
