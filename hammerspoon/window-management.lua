@@ -68,16 +68,6 @@ local function centerOnScreen()
   this.window:centerOnScreen(this.screen)
 end
 
-local function throwLeft()
-  local this = current:new()
-  this.window:moveOneScreenWest()
-end
-
-local function throwRight()
-  local this = current:new()
-  this.window:moveOneScreenEast()
-end
-
 
 local function leftHalf()
   local this = current:new()
@@ -201,33 +191,32 @@ local function windowBind(hyper, keyFuncTable)
   end
 end
 
--- * Move window to screen
-windowBind({"ctrl", "alt"}, {
-  left = throwLeft,
-  right = throwRight,
-  up = throwRight,
-  down = throwLeft
-})
 -- * Set Window Position on screen
 windowBind({"ctrl", "alt", "cmd"}, {
   m = maximizeWindow,    -- ⌃⌥⌘ + M
+  n = grid.pushWindowNextScreen,
+  h = hs.hints.windowHints,
   c = centerOnScreen,    -- ⌃⌥⌘ + C
   left = leftHalf,       -- ⌃⌥⌘ + ←
   right = rightHalf,     -- ⌃⌥⌘ + →
   up = topHalf,          -- ⌃⌥⌘ + ↑
   down = bottomHalf      -- ⌃⌥⌘ + ↓
 })
+
 -- * Set Window Position on screen
-windowBind({"ctrl", "alt", "shift"}, {
-  left = rightToLeft,      -- ⌃⌥⇧ + ←
-  right = rightToRight,    -- ⌃⌥⇧ + →
-  up = bottomUp,           -- ⌃⌥⇧ + ↑
-  down = bottomDown        -- ⌃⌥⇧ + ↓
-})
+windowBind({"ctrl","alt"}, {
+  left = leftToLeft,
+  right = leftToRight,
+  up = topUp,
+  down = topDown
+});
+
 -- * Set Window Position on screen
-windowBind({"alt", "cmd", "shift"}, {
-  left = leftToLeft,      -- ⌥⌘⇧ + ←
-  right = leftToRight,    -- ⌥⌘⇧ + →
-  up = topUp,             -- ⌥⌘⇧ + ↑
-  down = topDown          -- ⌥⌘⇧ + ↓
-})
+windowBind({"alt","cmd"}, {
+  left = rightToLeft,
+  right = rightToRight,
+  up = bottomUp,
+  down = bottomDown
+});
+
+

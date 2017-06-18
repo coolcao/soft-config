@@ -14,8 +14,8 @@
 --                            ** Requires **                            --
 -- -----------------------------------------------------------------------
 require "window-management"
-require "vox-control"
-require "vim-binding"
+-- require "vox-control"
+-- require "vim-binding"
 
 -- -----------------------------------------------------------------------
 --                            ** For Debug **                           --
