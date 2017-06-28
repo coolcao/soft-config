@@ -1,0 +1,12 @@
+{
+    "color_scheme": "Packages/Theme - Elementary/schemes/Monokai Extended Bright.tmTheme",
+    "draw_white_space": "all",
+    "font_face": "Hack",
+    "font_size": 15,
+    "ignored_packages":
+    [
+    ],
+    "tab_size": 4,
+    "theme": "Elementary Dark.sublime-theme",
+    "translate_tabs_to_spaces": true
+}

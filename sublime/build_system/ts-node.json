@@ -1,0 +1,7 @@
+{
+  "cmd": ["ts-node", "$file"],
+  "selector": "source.js",
+  "windows" : {
+     "shell": true
+  }
+}
