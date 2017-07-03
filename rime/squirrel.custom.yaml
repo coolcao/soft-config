@@ -1,0 +1,32 @@
+patch:
+  us_keyboard_layout: false
+  style:
+    font_point: 17
+    horizontal: true
+    border_width: 1
+    color_scheme: clean_white
+    border_height: 1
+    corner_radius: 5
+  app_options:
+    com.runningwithcrayons.Alfred-3:
+      ascii_mode: true
+      soft_cursor: true
+    com.microsoft.VSCode:
+      ascii_mode: true
+      soft_cursor: true
+    com.googlecode.iterm2:
+      ascii_mode: true
+      soft_cursor: true
+    com.apple.Terminal:
+      ascii_mode: true
+      soft_cursor: true
+    com.sublimetext.3:
+      ascii_mode: true
+      soft_cursor: true
+    com.jetbrains.intellij:
+      ascii_mode: true
+      soft_cursor: true
+    com.jetbrains.datagrip:
+      ascii_mode: true
+      soft_cursor: true
+
