@@ -1,0 +1,14 @@
+localhost:8089
+root ./
+browse /articles ./resources/templates/browse.html
+log log.log
+errors errors.log
+markdown / {
+	ext    .md    .markdown
+	css    /resources/css.css
+	template /resources/templates/blog.html
+}
+rewrite / /articles
+rewrite /articles/.gitignore /articles
+rewrite /articles/.git/ /articles
+rewrite /articles/.git/* /articles
