@@ -1,3 +1,67 @@
 patch:
+  key_binder/bindings:
+  - when: always
+    accept: Tab
+    send: Page_Down
+  - when: always
+    accept: Shift+Tab
+    send: Page_Up
+  - when: always
+    accept: equal
+    send: Page_Down
+  - when: always
+    accept: minus
+    send: Page_Up
+  - when: has_menu
+    accept: Tab
+    send: Page_Down
+  - when: has_menu
+    accept: Shift+Tab
+    send: Page_Up
+  - when: always
+    accept: Control+h
+    send: BackSpace
+  - when: always
+    accept: Control+p
+    send: Page_Up
+  - when: always
+    accept: Control+n
+    send: Page_Down
+  - when: always
+    accept: Control+i
+    send: Up
+  - when: always
+    accept: Control+k
+    send: Down
+  - send: 2
+    accept: semicolon
+    when: has_menu
+  - send: 3
+    accept: apostrophe
+    when: has_menu
+  switcher:
+    save_options:
+    - full_shape
+    - ascii_punct
+    - simplification
+    - extended_charset
+    abbreviate_options: true
+    caption: 〔方案選單〕
+    fold_options: true
+    hotkeys:
+    - Control+grave
+    - Control+Shift+grave
+    - F4
+    option_list_separator: ／
+    hotkeys:
+    - Control+grave
+    - Control+Escape
+    - F4
   schema_list:
   - schema: double_pinyin_flypy
+  - schema: luna_pinyin_simp
+  editor:
+    Retrun: commit_raw_input
+  menu:
+    page_size: 6
+

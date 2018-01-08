@@ -1,42 +1,25 @@
 patch:
-  us_keyboard_layout: false
   style:
-    font_point: 17
+    alpha: 0.95
+    border_width: 9
+    border_height: 5
+    font_point: 18
     horizontal: true
-    border_width: 1
-    color_scheme: clean_white
-    border_height: 1
+    inline_preedit: true
+    font_face: PingFangSC-Regular
+    fullscreen: true
+    color_scheme: dark_temple
     corner_radius: 5
   app_options:
-    com.runningwithcrayons.Alfred-3:
+    com.jetbrains.WebStorm: &a
       ascii_mode: true
-      soft_cursor: true
-    com.microsoft.VSCode:
-      ascii_mode: true
-      soft_cursor: true
-    com.googlecode.iterm2:
-      ascii_mode: true
-      soft_cursor: true
-    com.apple.Terminal:
-      ascii_mode: true
-      soft_cursor: true
-    com.sublimetext.3:
-      ascii_mode: true
-      soft_cursor: true
-    com.jetbrains.intellij:
-      ascii_mode: true
-      soft_cursor: true
-    com.jetbrains.datagrip:
-      ascii_mode: true
-      soft_cursor: true
-    com.google.Chrome:
-      ascii_mode: true
-      soft_cursor: true
-    com.google.Chrome.canary:
-      ascii_mode: true
-      soft_cursor: true
-    org.mozilla.firefox:
-      ascii_mode: true
-      soft_cursor: true
-
+    com.googlecode.iterm2: *a
+    com.google.Chrome: *a
+    com.microsoft.VSCode: *a
+    com.apple.Terminal: *a
+    com.google.Chrome.canary: *a
+    org.mozilla.firefox: *a
+    com.github.atom: *a
+    com.sublimetext.3: *a
+    com.runningwithcrayons.Alfred-3: *a
 
