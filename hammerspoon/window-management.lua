@@ -192,6 +192,7 @@ local function windowBind(hyper, keyFuncTable)
 end
 
 -- * Set Window Position on screen
+-- windowBind({"shift", "alt", "cmd"}, {
 windowBind({"ctrl", "alt", "cmd"}, {
   m = maximizeWindow,    -- ⌃⌥⌘ + M
   n = grid.pushWindowNextScreen,
@@ -204,6 +205,7 @@ windowBind({"ctrl", "alt", "cmd"}, {
 })
 
 -- * Set Window Position on screen
+-- windowBind({"shift","alt"}, {
 windowBind({"ctrl","alt"}, {
   left = leftToLeft,
   right = leftToRight,
@@ -218,5 +220,3 @@ windowBind({"alt","cmd"}, {
   up = bottomUp,
   down = bottomDown
 });
-
-

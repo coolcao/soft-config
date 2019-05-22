@@ -1,0 +1,164 @@
+__build_info:
+  rime_version: 1.4.0
+  timestamps:
+    default: 1548171029
+    default.custom: 1553778998
+    key_bindings: 1550722213
+    key_bindings.custom: 0
+    punctuation: 1550722213
+    punctuation.custom: 0
+app_options:
+  com.apple.Terminal:
+    ascii_mode: true
+    soft_cursor: true
+  com.apple.launchpad.launcher:
+    ascii_mode: true
+    soft_cursor: true
+  com.google.Chrome:
+    ascii_mode: true
+    soft_cursor: true
+  com.google.Chrome.canary:
+    ascii_mode: true
+    soft_cursor: true
+  com.googlecode.iterm2:
+    ascii_mode: true
+    soft_cursor: true
+  com.jetbrains.WebStorm:
+    ascii_mode: true
+    soft_cursor: true
+  com.jetbrains.datagrip:
+    ascii_mode: true
+    soft_cursor: true
+  com.jetbrains.intellij:
+    ascii_mode: true
+    soft_cursor: true
+  com.microsoft.VSCode:
+    ascii_mode: true
+    soft_cursor: true
+  "com.runningwithcrayons.Alfred-3":
+    ascii_mode: true
+    soft_cursor: true
+  com.sublimetext.3:
+    ascii_mode: true
+    soft_cursor: true
+  org.mozilla.firefox:
+    ascii_mode: true
+    soft_cursor: true
+ascii_composer:
+  good_old_caps_lock: true
+  switch_key:
+    Caps_Lock: clear
+    Control_L: noop
+    Control_R: noop
+    Eisu_toggle: clear
+    Shift_L: inline_ascii
+    Shift_R: commit_text
+config_version: 0.40
+key_binder:
+  bindings:
+    - {accept: semicolon, send: 2, when: has_menu}
+    - {accept: apostrophe, send: 3, when: has_menu}
+    - {accept: period, send: Page_Down, when: has_menu}
+    - {accept: comma, send: Page_Up, when: has_menu}
+    - {accept: Tab, send: Right, when: has_menu}
+    - {accept: "Control+k", send: Down, when: has_menu}
+    - {accept: "Control+n", send: Down, when: has_menu}
+    - {accept: "Control+i", send: Up, when: has_menu}
+    - {accept: "Control+p", send: Up, when: has_menu}
+    - {accept: "Control+j", send: Left, when: has_menu}
+    - {accept: "Control+l", send: Right, when: has_menu}
+menu:
+  page_size: 6
+punctuator:
+  full_shape:
+    " ": {commit: "　"}
+    "!": {commit: "！"}
+    "\"": {pair: ["“", "”"]}
+    "#": ["＃", "⌘"]
+    "$": ["￥", "$", "€", "£", "¥", "¢", "¤"]
+    "%": ["％", "°", "℃"]
+    "&": "＆"
+    "'": {pair: ["‘", "’"]}
+    "(": "（"
+    ")": "）"
+    "*": ["＊", "·", "・", "×", "※", "❂"]
+    "+": "＋"
+    ",": {commit: "，"}
+    "-": "－"
+    .: {commit: "。"}
+    "/": ["／", "÷"]
+    ":": {commit: "："}
+    ";": {commit: "；"}
+    "<": ["《", "〈", "«", "‹"]
+    "=": "＝"
+    ">": ["》", "〉", "»", "›"]
+    "?": {commit: "？"}
+    "@": ["＠", "☯"]
+    "[": ["「", "【", "〔", "［"]
+    "\\": ["、", "＼"]
+    "]": ["」", "】", "〕", "］"]
+    "^": {commit: "……"}
+    _: "——"
+    "`": "｀"
+    "{": ["『", "〖", "｛"]
+    "|": ["·", "｜", "§", "¦"]
+    "}": ["』", "〗", "｝"]
+    "~": "～"
+  half_shape:
+    "!": {commit: "！"}
+    "\"": {pair: ["“", "”"]}
+    "#": "#"
+    "$": ["￥", "$", "€", "£", "¥", "¢", "¤"]
+    "%": ["%", "％", "°", "℃"]
+    "&": "&"
+    "'": {pair: ["‘", "’"]}
+    "(": "（"
+    ")": "）"
+    "*": ["*", "＊", "·", "・", "×", "※", "❂"]
+    "+": "+"
+    ",": {commit: "，"}
+    "-": "-"
+    .: {commit: "。"}
+    "/": ["、", "/", "／", "÷"]
+    ":": {commit: "："}
+    ";": {commit: "；"}
+    "<": ["《", "〈", "«", "‹"]
+    "=": "="
+    ">": ["》", "〉", "»", "›"]
+    "?": {commit: "？"}
+    "@": "@"
+    "[": ["「", "【", "〔", "［"]
+    "\\": ["、", "\\", "＼"]
+    "]": ["」", "】", "〕", "］"]
+    "^": {commit: "……"}
+    _: "——"
+    "`": "`"
+    "{": ["『", "〖", "｛"]
+    "|": ["·", "|", "｜", "§", "¦"]
+    "}": ["』", "〗", "｝"]
+    "~": ["~", "～"]
+recognizer:
+  patterns:
+    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
+    uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
+    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
+schema_list:
+  - schema: double_pinyin_flypy
+  - schema: luna_pinyin_simp
+switcher:
+  abbreviate_options: true
+  caption: "〔方案選單〕"
+  fold_options: true
+  hotkeys:
+    - "Control+grave"
+    - "Control+Shift+grave"
+    - F4
+  option_list_separator: "／"
+  save_options:
+    - full_shape
+    - ascii_punct
+    - simplification
+    - extended_charset
+    - zh_hant
+    - zh_hans
+    - zh_hant_tw

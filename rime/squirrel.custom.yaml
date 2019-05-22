@@ -1,25 +1,33 @@
-patch:
-  style:
-    alpha: 0.95
-    border_width: 9
-    border_height: 5
-    font_point: 18
-    horizontal: true
-    inline_preedit: true
-    font_face: PingFangSC-Regular
-    fullscreen: true
-    color_scheme: dark_temple
-    corner_radius: 5
-  app_options:
-    com.jetbrains.WebStorm: &a
-      ascii_mode: true
-    com.googlecode.iterm2: *a
-    com.google.Chrome: *a
-    com.microsoft.VSCode: *a
-    com.apple.Terminal: *a
-    com.google.Chrome.canary: *a
-    org.mozilla.firefox: *a
-    com.github.atom: *a
-    com.sublimetext.3: *a
-    com.runningwithcrayons.Alfred-3: *a
+# 適用於【鼠鬚管】0.9.13+
+# 位置：~/Library/Rime/squirrel.custom.yaml
+# 用法：想要哪項生效，就刪去該行行首的#字符，但注意保留用於縮進的空格
 
+
+patch:
+  us_keyboard_layout: true      # 鍵盤選項：應用美式鍵盤佈局
+  show_notifications_when: growl_is_running  # 狀態通知，默認裝有Growl時顯示，也可設爲全開（always）全關（never）
+  style/horizontal: true        # 候選窗横向顯示
+  style/inline_preedit: true   # 非內嵌編碼行
+  #style/font_face: "儷黑 Pro,HanaMinA,HanaMinB"    # 我喜歡的字體名稱
+  style/font_face: "HanaMinA,HanaMinB"    # 我喜歡的字體名稱
+  style/font_point: 22          # 字號
+  style/corner_radius: 10       # 窗口圓角半徑
+  style/border_height: 0        # 窗口邊界高度，大於圓角半徑才有效果
+  style/border_width: 0         # 窗口邊界寬度，大於圓角半徑才有效果
+  style/color_scheme: psionics      # 選擇配色方案
+  # style/color_scheme: apathy      # 選擇配色方案
+  
+
+
+# 註：預設的配色方案及代碼（指定爲 style/color_scheme ）
+#   系統默認色系 - native
+#   碧水 - aqua
+#   青天 - azure
+#   明月 - luna
+#   墨池 - ink
+#   孤寺 - lost_temple
+#   暗堂 - dark_temple
+#   星際我爭霸 - starcraft
+#   谷歌 - google
+#   曬經石 - solarized_rock
+#   简约白 - clean_white

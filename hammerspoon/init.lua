@@ -35,7 +35,8 @@ end
 hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
 
 -- Well, sometimes auto-reload is not working, you know u.u
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "n", function()
+-- hs.hotkey.bind({"cmd", "alt", "ctrl"}, "r", function()
+hs.hotkey.bind({"cmd", "alt", "shift"}, "r", function()
   hs.reload()
 end)
 hs.alert.show("Config loaded")
