@@ -1,0 +1,195 @@
+app_options:
+  com.apple.Terminal:
+    ascii_mode: true
+    soft_cursor: true
+  com.apple.launchpad.launcher:
+    ascii_mode: true
+    soft_cursor: true
+  com.google.Chrome:
+    ascii_mode: true
+    soft_cursor: true
+  com.google.Chrome.canary:
+    ascii_mode: true
+    soft_cursor: true
+  com.googlecode.iterm2:
+    ascii_mode: true
+    soft_cursor: true
+  com.jetbrains.datagrip:
+    ascii_mode: true
+    soft_cursor: true
+  com.jetbrains.intellij:
+    ascii_mode: true
+    soft_cursor: true
+  com.microsoft.VSCode:
+    ascii_mode: true
+    soft_cursor: true
+  "com.runningwithcrayons.Alfred-3":
+    ascii_mode: true
+    soft_cursor: true
+  com.sublimetext.3:
+    ascii_mode: true
+    soft_cursor: true
+  org.mozilla.firefox:
+    ascii_mode: true
+    soft_cursor: true
+chord_duration: 0.1
+config_version: 0.22.custom.2171422776
+customization: 2171422776
+preset_color_schemes:
+  aqua:
+    author: "佛振 <chen.sst@gmail.com>"
+    back_color: 0xeeeceeee
+    candidate_text_color: 0x000000
+    comment_text_color: 0x5a5a5a
+    hilited_candidate_back_color: 0xeefa3a0a
+    hilited_candidate_text_color: 0xffffff
+    hilited_comment_text_color: 0xfcac9d
+    hilited_text_color: 0x000000
+    name: "碧水／Aqua"
+    text_color: 0x606060
+  azure:
+    author: "佛振 <chen.sst@gmail.com>"
+    back_color: 0xee8b4e01
+    candidate_text_color: 0xffeacc
+    comment_text_color: 0xc69664
+    hilited_candidate_back_color: 0x00000000
+    hilited_candidate_text_color: 0x7ffeff
+    hilited_text_color: 0xffeacc
+    name: "青天／Azure"
+    text_color: 0xcfa677
+  clean_white:
+    author: "Chongyu Zhu <lembacon@gmail.com>, based on 搜狗「简约白」"
+    back_color: 0xeeeeee
+    border_height: 6
+    border_width: 6
+    candidate_format: "%c %@ "
+    candidate_text_color: 0x000000
+    comment_text_color: 0x808080
+    corner_radius: 6
+    font_point: 16
+    hilited_candidate_back_color: 0xeeeeee
+    hilited_candidate_label_color: 0xa0c98915
+    hilited_candidate_text_color: 0xc98915
+    hilited_text_color: 0x000000
+    horizontal: true
+    label_color: 0x888888
+    label_font_point: 12
+    name: "简约白／Clean White"
+    text_color: 0x808080
+  dark_temple:
+    author: "佛振 <chen.sst@gmail.com>, based on ir_black"
+    back_color: 0x222222
+    candidate_text_color: 0xd8e3e6
+    comment_text_color: 0x606cff
+    hilited_back_color: 0x222222
+    hilited_candidate_back_color: 0x10000000
+    hilited_candidate_text_color: 0x92f6da
+    hilited_text_color: 0xffcf9a
+    name: "暗堂／Dark Temple"
+    text_color: 0x92f6da
+  google:
+    author: "skoj <skoj@qq.com>"
+    back_color: 0xFFFFFF
+    border_color: 0xE2E2E2
+    candidate_text_color: 0x000000
+    comment_text_color: 0x6D6D6D
+    hilited_back_color: 0xFFFFFF
+    hilited_candidate_back_color: 0xCE7539
+    hilited_candidate_text_color: 0xFFFFFF
+    hilited_comment_text_color: 0xEBC6B0
+    hilited_text_color: 0x000000
+    name: "谷歌／Google"
+    text_color: 0x666666
+  ink:
+    author: "佛振 <chen.sst@gmail.com>"
+    back_color: 0xeeffffff
+    candidate_text_color: 0x000000
+    comment_text_color: 0x5a5a5a
+    hilited_back_color: 0xdddddd
+    hilited_candidate_back_color: 0xcc000000
+    hilited_candidate_text_color: 0xffffff
+    hilited_comment_text_color: 0x808080
+    hilited_text_color: 0x000000
+    name: "墨池／Ink"
+    text_color: 0x000000
+  lost_temple:
+    author: "佛振 <chen.sst@gmail.com>, based on ir_black"
+    back_color: 0xee303030
+    comment_text_color: 0xbb82e6ca
+    hilited_candidate_back_color: 0x82e6ca
+    hilited_candidate_text_color: 0x000000
+    hilited_comment_text_color: 0xbb203d34
+    hilited_text_color: 0x82e6ca
+    name: "孤寺／Lost Temple"
+    text_color: 0xe8f3f6
+  luna:
+    author: "佛振 <chen.sst@gmail.com>"
+    back_color: 0xdd000000
+    candidate_text_color: 0xeceeee
+    comment_text_color: 0xa5a5a5
+    hilited_candidate_back_color: 0x40000000
+    hilited_candidate_text_color: 0x7fffff
+    hilited_comment_text_color: 0x449c9d
+    hilited_text_color: 0x7fffff
+    name: "明月／Luna"
+    text_color: 0xa5a5a5
+  solarized_rock:
+    author: "Aben <tntaben@gmail.com>, based on Ethan Schoonover's Solarized color scheme"
+    back_color: 0x362b00
+    border_color: 0x362b00
+    candidate_text_color: 0x969483
+    hilited_candidate_back_color: 0x8236d3
+    hilited_candidate_text_color: 0xffffff
+    hilited_comment_text_color: 0x362b00
+    hilited_text_color: 0x98a12a
+    name: "曬經石／Solarized Rock"
+    text_color: 0x009985
+  starcraft:
+    author: "Contralisk <contralisk@gmail.com>, original artwork by Blizzard Entertainment"
+    back_color: 0xee000000
+    border_color: 0x1010a0
+    candidate_text_color: 0x30bb55
+    comment_text_color: 0xfecb96
+    hilited_back_color: 0x000000
+    hilited_candidate_back_color: 0x00000000
+    hilited_candidate_text_color: 0x70ffaf
+    hilited_text_color: 0xfecb96
+    name: "星際我爭霸／StarCraft"
+    text_color: 0xccaa88
+  material:
+    name: "材料 / Material"
+    author: "@yzlnew"
+    horizontal: true                                  # 水平排列
+    inline_preedit: false                              # true: 单行显示，false: 双行显示
+    candidate_format: "\u2005%c\u2005%@\u2005"        # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
+    corner_radius: 5                                  # 候选条圆角
+    border_height: 5                                  # 窗口边界高度，大于圆角半径才生效
+    border_width: 5                                   # 窗口边界宽度，大于圆角半径才生效
+    border_color: 0xffffff                            # 边框色
+    back_color: 0x444444                              # 候选条背景色
+    font_face: "PingFangSC-Regular, H-SiuNiu"         # 候选词字体
+    font_point: 18                                    # 候选字词大小
+    text_color: 0xffffff                              # 高亮选中词颜色
+    label_font_face: "mononoki"                       # 候选词编号字体
+    label_font_point: 16                              # 候选编号大小
+    label_color: 0xDCD8CF                             # 预选栏编号颜色
+    candidate_text_color: 0xffffff                    # 预选项文字颜色
+    text_color: 0xffffff                              # 拼音行文字颜色，24位色值，16进制，BGR顺序
+    comment_text_color: 0xd4bc00                      # 拼音等提示文字颜色
+    hilited_text_color: 0xffffff                      # 高亮拼音 (需要开启内嵌编码)
+    hilited_candidate_text_color: 0xd7fffc            # 第一候选项文字颜色
+    hilited_candidate_back_color: 0xd4bc00           # 第一候选项背景背景色
+    hilited_candidate_label_color: 0xd7fcfc          # 第一候选项编号颜色
+    hilited_comment_text_color: 0xd4bc00              # 注解文字高亮
+show_notifications_via_notification_center: true
+show_notifications_when: appropriate
+style:
+  alpha: 1
+  border_height: 2
+  border_width: 4
+  color_scheme: material
+  corner_radius: 5
+  font_face: "HiraginoSansGB-W3"
+  font_point: 18
+  horizontal: false
+us_keyboard_layout: false

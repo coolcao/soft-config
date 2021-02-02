@@ -3,6 +3,7 @@ patch:
   - schema: double_pinyin_flypy
   - schema: luna_pinyin_simp
 
+
   app_options:
     com.apple.Terminal:
       ascii_mode: true
@@ -50,8 +51,8 @@ patch:
     bindings:
       - {accept: semicolon, send: 2, when: has_menu} #分號選第二重碼
       - {accept: apostrophe, send: 3, when: has_menu} #引號選第三重碼
-      - {accept: period, send: Page_Down , when: has_menu} #引號選第三重碼
-      - {accept: comma, send: Page_Up , when: has_menu} #引號選第三重碼
+      - {accept: period, send: Page_Down , when: has_menu} #逗号下一页
+      - {accept: comma, send: Page_Up , when: has_menu} #分号上一页
       - {accept: Tab, send: Right, when: has_menu}
       - {accept: "Control+k", send: Down, when: has_menu}
       - {accept: "Control+n", send: Down, when: has_menu}
