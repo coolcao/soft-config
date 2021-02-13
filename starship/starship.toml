@@ -1,0 +1,45 @@
+## ~/.config/starship.toml
+[character] # The name of the module we are configuring is "character"
+error_symbol = "[✖](bold red) " 
+success_symbol = "[=>](bold green)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
+vicmd_symbol = "[V](bold green) " 
+
+[battery]
+charging_symbol = "🔌"
+discharging_symbol = "⚡️️"
+full_symbol = "🔋"
+
+[[battery.display]]
+style = "bold red"
+threshold = 30
+[[battery.display]]
+style = "bold yellow"
+threshold = 60
+[[battery.display]]
+style = "bold green"
+threshold = 100
+
+[cmd_duration]
+format = " took:[$duration]($style)"
+
+[git_branch]
+symbol = "🌱 "
+truncation_length = 128
+truncation_symbol = ""
+
+[git_commit]
+commit_hash_length = 128
+tag_symbol = "🏷"
+
+[hostname]
+disabled = false
+format = "on [$hostname](bold red) "
+ssh_only = true
+trim_at = ".companyname.com"
+
+[memory_usage]
+disabled = false
+format = "内存占用:[${ram_pct}]($style)"
+style = "bold dimmed green"
+symbol = " "
+threshold = -1
