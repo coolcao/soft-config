@@ -7,6 +7,7 @@
 # 4️⃣：zsh-autosuggestion
 # 5️⃣：zsh-history-substring-search 
 # 6️⃣：dircolors-solarized 终端彩色显示
+# 7️⃣：bat 代替 cat命令，可彩色显示代码，显示行数等
 ################
 
 # ============================== 基础配置 ==========================
@@ -43,6 +44,10 @@ bindkey '^N' history-substring-search-down
 # 将项目中的一个方案扔到 ~/.dir_colors，然后使用下面别名定义ls
 eval `gdircolors -b $HOME/.dir_colors`
 alias ls='gls --color=auto -l'
+
+## bat 代替 cat 命令
+# 安装bat: brew install bat
+alias cat='bat'
  
 
 
