@@ -9,7 +9,14 @@
 # 6️⃣：dircolors-solarized 终端彩色显示
 ################
 
-# ============================== 插件启用 ==========================
+# ============================== 基础配置 ==========================
+## 设置大小写也能自动补全
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
+
+
+
+# ============================== 插件设置 ==========================
 ## starship
 eval "$(starship init zsh)"
 
