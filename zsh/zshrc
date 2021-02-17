@@ -15,6 +15,14 @@
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
 
+## history设置
+HISTSIZE=100000
+SAVEHIST=100000
+HISTFILE=~/.zsh_history
+setopt HIST_IGNORE_DUPS
+setopt INC_APPEND_HISTORY
+setopt EXTENDED_HISTORY
+
 # ============================== 插件配置 ==========================
 ## starship
 eval "$(starship init zsh)"
