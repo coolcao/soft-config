@@ -2,6 +2,7 @@
 function fish_prompt --description 'coolcao prompt'
     #Save the return status of the previous command
     set -l last_pipestatus $pipestatus
+    set arrow_color "#FFCC00"
 
     switch "$USER"
         case root toor
@@ -9,7 +10,7 @@ function fish_prompt --description 'coolcao prompt'
         case '*'
             printf '\f[%s] %s%s in %s%s %s%s%s' (date "+%H:%M:%S") (set_color brblue) \ $USER  (set_color $fish_color_cwd) $PWD (set_color brblue)
             fish_git_prompt (set_color yellow)
-            echo (set_color normal)
+            echo (set_color $arrow_color)
             printf '➤ '
     end
 end
