@@ -1,11 +1,11 @@
 __build_info:
   rime_version: 1.5.3
   timestamps:
-    default: 1565609510
-    default.custom: 1565615356
-    key_bindings: 1558514758
+    default: 1612254415
+    default.custom: 1612258506
+    key_bindings: 1612254415
     key_bindings.custom: 0
-    punctuation: 1558514758
+    punctuation: 1612254415
     punctuation.custom: 0
 app_options:
   com.apple.Terminal:

@@ -1,15 +1,15 @@
 __build_info:
-  rime_version: 1.5.3
+  rime_version: 1.7.3
   timestamps:
-    default: 1565609510
-    default.custom: 1565615356
-    double_pinyin_flypy.custom: 1565776983
-    double_pinyin_flypy.schema: 1597191428
-    emoji_suggestion: 1565610608
+    default: 1612254415
+    default.custom: 1612258506
+    double_pinyin_flypy.custom: 1620284303
+    double_pinyin_flypy.schema: 1637230702
+    emoji_suggestion: 1613049891
     emoji_suggestion.custom: 0
-    key_bindings: 1558514758
+    key_bindings: 1612254415
     key_bindings.custom: 0
-    punctuation: 1558514758
+    punctuation: 1612254415
     punctuation.custom: 0
 emoji_suggestion:
   opencc_config: emoji.json
@@ -36,6 +36,7 @@ engine:
     - punct_segmentor
     - fallback_segmentor
   translators:
+    - "lua_translator@date_translator"
     - punct_translator
     - reverse_lookup_translator
     - script_translator
@@ -194,6 +195,7 @@ switches:
   - name: full_shape
     states: ["半角", "全角"]
   - name: simplification
+    reset: 1
     states: ["漢字", "汉字"]
   - name: ascii_punct
     states: ["。，", "．，"]

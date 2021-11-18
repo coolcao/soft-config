@@ -3,3 +3,7 @@ __patch:
   - patch/+:
       __include: emoji_suggestion:/patch
 # }
+#
+
+patch:
+  translator/preedit_format: {} 

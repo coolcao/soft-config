@@ -1,0 +1,63 @@
+patch:
+  schema_list:
+  - schema: double_pinyin_flypy
+  - schema: luna_pinyin_simp
+
+
+  app_options:
+    com.apple.Terminal:
+      ascii_mode: true
+      soft_cursor: true
+    com.apple.launchpad.launcher:
+      ascii_mode: true
+      soft_cursor: true
+    com.google.Chrome:
+      ascii_mode: true
+      soft_cursor: true
+    com.google.Chrome.canary:
+      ascii_mode: true
+      soft_cursor: true
+    com.googlecode.iterm2:
+      ascii_mode: true
+      soft_cursor: true
+    com.jetbrains.datagrip:
+      ascii_mode: true
+      soft_cursor: true
+    com.jetbrains.intellij:
+      ascii_mode: true
+      soft_cursor: true
+    com.microsoft.VSCode:
+      ascii_mode: true
+      soft_cursor: true
+    com.runningwithcrayons.Alfred-3:
+      ascii_mode: true
+      soft_cursor: true
+    com.sublimetext.3:
+      ascii_mode: true
+      soft_cursor: true
+    org.mozilla.firefox:
+      ascii_mode: true
+      soft_cursor: true
+    com.jetbrains.WebStorm:
+      ascii_mode: true
+      soft_cursor: true
+
+  menu:
+    page_size: 6
+
+
+
+  key_binder:
+    bindings:
+      - {accept: semicolon, send: 2, when: has_menu} #分號選第二重碼
+      - {accept: apostrophe, send: 3, when: has_menu} #引號選第三重碼
+      - {accept: period, send: Page_Down , when: has_menu} #逗号下一页
+      - {accept: comma, send: Page_Up , when: has_menu} #分号上一页
+      - {accept: Tab, send: Right, when: has_menu}
+      - {accept: "Control+k", send: Down, when: has_menu}
+      - {accept: "Control+n", send: Down, when: has_menu}
+      - {accept: "Control+i", send: Up, when: has_menu}
+      - {accept: "Control+p", send: Up, when: has_menu}
+      - {accept: "Control+j", send: Left, when: has_menu}
+      - {accept: "Control+l", send: Right, when: has_menu}
+

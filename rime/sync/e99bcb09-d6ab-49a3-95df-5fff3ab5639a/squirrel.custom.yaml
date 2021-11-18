@@ -1,0 +1,75 @@
+# 適用於【鼠鬚管】0.9.13+
+# 位置：~/Library/Rime/squirrel.custom.yaml
+# 用法：想要哪項生效，就刪去該行行首的#字符，但注意保留用於縮進的空格
+
+
+patch:
+  us_keyboard_layout: true      # 鍵盤選項：應用美式鍵盤佈局
+  #show_notifications_when: growl_is_running  # 狀態通知，默認裝有Growl時顯示，也可設爲全開（always）全關（never）
+  show_notifications_when: always  # 狀態通知，默認裝有Growl時顯示，也可設爲全開（always）全關（never）
+  style/horizontal: true        # 候選窗横向顯示
+  style/inline_preedit: true   # 非內嵌編碼行
+  #style/font_face: "儷黑 Pro,HanaMinA,HanaMinB"    # 我喜歡的字體名稱
+  style/font_face: "FiraCode Nerd Font"    # 我喜歡的字體名稱
+  #style/font_face: "HanaMinA,HanaMinB"    # 我喜歡的字體名稱
+  style/font_point: 16          # 字號
+  style/corner_radius: 5       # 窗口圓角半徑
+  style/border_height: 5        # 窗口邊界高度，大於圓角半徑才有效果
+  style/border_width: 5         # 窗口邊界寬度，大於圓角半徑才有效果
+  #style/color_scheme: psionics      # 選擇配色方案
+  style/color_scheme: fctix5_blue      # 選擇配色方案
+  style/label_font_point: 12
+  style/label_font_face: "SimHei"
+  #style/label_color: 0xC25D2C
+  #style/line_spacing: 10      # 候选词行间距
+  #style/spacing: 5      # 在非内嵌编码模式下，预编辑和候选词之间的间距
+  preset_color_schemes:
+    fctix5_blue:
+      author: "coolcao"
+      back_color: 0xeeeeee
+      border_color: 0x48c9b0
+      candidate_text_color: 0x707c7b
+      comment_text_color: 0x616a6b
+      hilited_back_color: 0x444444
+      hilited_candidate_back_color: 0x48c9b0
+      hilited_candidate_label_color: 0x2e4053
+      hilited_candidate_text_color: 0x2e4053
+      hilited_comment_text_color: 0x616a6b
+      hilited_text_color: 0xeeeeee
+      name: "fctix5_blue"
+      text_color: 0xc2c2c2
+
+    coolcao:
+      author: "coolcao"
+      back_color: 0x444444
+      candidate_text_color: 0xeeeeee
+      comment_text_color: 0x808080
+      hilited_back_color: 0x444444
+      hilited_candidate_back_color: 0x8c3188
+      hilited_candidate_label_color: 0xfafafa
+      hilited_candidate_text_color: 0xfafafa
+      hilited_comment_text_color: 0x444444
+      hilited_text_color: 0xeeeeee
+      name: "coolcao"
+      text_color: 0xc2c2c2
+  
+
+
+# 註：預設的配色方案及代碼（指定爲 style/color_scheme ）
+#   系統默認色系 - native
+#   碧水 - aqua
+#   青天 - azure
+#   明月 - luna
+#   墨池 - ink
+#   孤寺 - lost_temple
+#   暗堂 - dark_temple
+#   星際我爭霸 - starcraft
+#   谷歌 - google
+#   曬經石 - solarized_rock
+#   简约白 - clean_white
+#   幽能 - psionics
+#   纯粹的形式 - purity_of_form
+#   纯粹的本质 - pruity_of_essence
+#   冷漠 - apathy
+#   浮尘 - dust
+#   沙漠夜 - mojave_dark
