@@ -8,6 +8,7 @@
 # 5️⃣：zsh-history-substring-search 
 # 6️⃣：dircolors-solarized 终端彩色显示
 # 7️⃣：bat 代替 cat命令，可彩色显示代码，显示行数等
+# 8️⃣  exa 代替 ls 命令,可以让ls显示更美化
 ################
 
 # ============================== 基础配置 ==========================
@@ -18,7 +19,6 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}
 ## history设置
 HISTSIZE=100000
 SAVEHIST=100000
-HISTFILE=~/.zsh_history
 setopt HIST_IGNORE_DUPS
 setopt INC_APPEND_HISTORY
 setopt EXTENDED_HISTORY
@@ -28,25 +28,22 @@ setopt EXTENDED_HISTORY
 eval "$(starship init zsh)"
 
 ## autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+[[ -s /Users/coolcao/.autojump/etc/profile.d/autojump.sh ]] && source /Users/coolcao/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit -u
 
 ## zsh-syntax-highlighting语法高亮插件
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ## zsh-autosuggestions自动提示插件
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ### zsh-history-substring-search
-source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 bindkey '^P' history-substring-search-up
 bindkey '^N' history-substring-search-down
 
-# if [ -x /usr/bin/dircolors ]; then
-#         test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-#         alias ls='ls --color=auto'
-# fi
 # 解决终端不能彩色显示问题
 # 使用https://github.com/seebi/dircolors-solarized.git
 # 将项目中的一个方案扔到 ~/.dir_colors，然后使用下面别名定义ls
@@ -56,59 +53,42 @@ alias ls='gls --color=auto -l'
 ## bat 代替 cat 命令
 # 安装bat: brew install bat
 alias cat='bat'
+alias ls='exa --icons'
  
 
 
 # ============================= 环境变量设置 =============================
 
 export LANG=en_US.UTF-8
+export DENO_INSTALL="/Users/coolcao/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+export GO_HOME="/Users/coolcao/go"
+export PATH="$GO_HOME/bin:$PATH"
 
-# tabtab source for electron-forge package
-# uninstall by removing these lines or running `tabtab uninstall electron-forge`
-[[ -f /Users/coolcao/code/open/scratch-gui/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/coolcao/code/open/scratch-gui/node_modules/tabtab/.completions/electron-forge.zsh
-
-### Maven
-MAVEN_HOME=/Applications/apache-maven-3.6.1
-PATH=$MAVEN_HOME/bin:$PATH
-export MAVEN_HOME 
-export PATH
-
-### Spark
-SPARK_HOME=/Applications/spark-2.4.3-bin-hadoop2.7
-PATH=$SPARK_HOME/bin:$PATH
-export SPARK_HOME 
-export PATH
-
-### jdk
-export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_212.jdk/Contents/Home
-export JAVA_12_HOME=/Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home
-export JAVA_HOME=$JAVA_12_HOME
-export PATH=$JAVA_HOME/bin:$PATH
-export PATH="$PATH":"$HOME/.pub-cache/bin"
-
-### GOLANG
-# export GOROOT=/usr/local/go
-# export PATH=$GOROOT/bin
-export GOPATH=/Users/coolcao/go
-export PATH=$PATH:$GOPATH/bin
-
-# gvm 配置，多版本golang切换工具
-[[ -s "/Users/coolcao/.gvm/scripts/gvm" ]] && source "/Users/coolcao/.gvm/scripts/gvm"
-
-
+export SONAR_SCANNER="/Applications/sonar-scanner"
+export PATH="$SONAR_SCANNER/bin:$PATH"
 
 
 # ============================= 别名设置 =============================
 alias history="history -i"
-alias java8="export PATH=$JAVA_8_HOME/bin:$PATH"
-alias java12="export PATH=$JAVA_12_HOME/bin:$PATH"
-alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
-#alias ls="ls -la"
 alias chrome="'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'"
-alias kindlegen="/Applications/KindleGen_Mac_i386_v2_9/kindlegen"
-alias python="/usr/local/bin/python3"
-alias pip="/usr/local/bin/pip3"
 alias gradle="/Applications/gradle/bin/gradle"
-alias codi="'/Applications/VSCodium.app/Contents/MacOS/Electron'"
+alias maven="/Applications/maven/bin/mvn"
 alias nt='nest'
+alias ll='ls -l'
+alias ebook-convert="/Applications/calibre.app/Contents/MacOS/ebook-convert"
+alias web2disk="/Applications/calibre.app/Contents/MacOS/web2disk"
 
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
